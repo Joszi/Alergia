@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projekt.inzynierski"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="3" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/ikona"
+        android:label="Alergia" >
+        <activity
+            android:name=".PoczatkowyEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Alergia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PolaczenieEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Ekran główny"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.POLACZENIEEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UstawieniaPreferencje"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Ustawienia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.USTAWIENIA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokDniaEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok dnia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKDNIAEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokTygodniaEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok tygodnia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKTYGODNIAEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokAlergenuEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok alergenu"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKALERGENUEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WspomaganieKuracjiEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Wspomaganie kuracji"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WSPOMAGANIEKURACJIEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokKuracjiEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok kuracji"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKKURACJIEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokPowiadomieniaEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok powiadomienia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKPOWIADOMIENIAEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WidokZaplanowanejKuracjiEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Widok zaplanowanej kuracji"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WIDOKZAPLANOWANEJKURACJIEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WspomaganieKuracjiPowiadomienieEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Ustaw powiadomienie"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.WSPOMAGANIEKURACJIPOWIADOMIENIEEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SynchronizacjaEkran"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Synchronizacja danych"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="projekt.inzynierski.SYNCHRONIZACJAEKRAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".WidzetAlergia"
+            android:label="Alergia" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" />
+        </receiver>
+        <receiver
+            android:name=".KuracjaOdbiorcaKomunikatow"
+            android:process=":remote" />
+    </application>
+
+</manifest>

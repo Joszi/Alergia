@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pobierzDane">Pobierz dane</string>
+    <string name="pokazPylenie">Pokaż pylenie</string>
+    <string name="przebiegLeczenia">Przebieg leczenia</string>
+    <string name="synchronizujDane">Synchronizuj dane</string>
+    <string name="ustawienia">Ustawienia</string>
+    <string name="tytul">Tytuł:</string>
+    <string name="wpiszTytul">Wpisz tytuł</string>
+    <string name="opis">Opis:</string>
+    <string name="wpiszOpis">Wpisz opis</string>
+    <string name="zatwierdz">Zatwierdź</string>
+    <string name="adresIP">Twój adres IP to:</string>
+    <string name="odczytAdresIP">Tu odczytasz swój adres IP</string>
+    <string name="adresIPDrugiego">Adres IP drugiego urządzenia:</string>
+    <string name="wpiszIP">Wpisz adres IP</string>
+    <string name="miejscowoscData">Miejscowość i data</string>
+    <string name="alergenPierwszy">Alergen pierwszy</string>
+    <string name="alergenDrugi">Alergen drugi</string>
+    <string name="alergenTrzeci">Alergen trzeci</string>
+    <string name="rodzajAlergenu">Rodzaj alergenu</string>
+    <string name="opisAlergenu">Opis alergenu</string>
+    <string name="usunWpis">Usuń wpis</string>
+    <string name="dodajKuracje">Dodaj kurację</string>
+    <string name="powtorz">Powtórz:</string>
+    <string name="tytulPowiadomienia">Tytuł powiadomienia:</string>
+    <string name="godzinaPowiadomienia">Godzina powiadomienia:</string>
+    <string name="odczytGodzinaPowiadomienia">Tu odczytasz godzinę powiadomienia</string>
+    <string name="powtorzCo">Powtórz co:</string>
+    <string name="odczytCyklicznoscPowiadomienia">Tu odczytasz cykliczność powiadomienia</string>
+    <string name="opisPowiadomienia">Opis powiadomienia:</string>
+    <string name="odczytOpisPowiadomienia">Tu odczytasz opis powiadomienia</string>
+    <string name="usunZdarzenie">Usuń zdarzenie</string>
+    <string name="tytulKuracji">Tytuł kuracji:</string>
+    <string name="dataWprowadzenia">Data wprowadzenia:</string>
+    <string name="odczytDataWprowadzenia">Tu odczytasz datę wprowadzenia</string>
+    <string name="odczytOpisKuracji">Tu odczytasz opis kuracji</string>
+    <string name="utworzPowiadomienie">Utwórz powiadomienie</string>
+
+</resources>

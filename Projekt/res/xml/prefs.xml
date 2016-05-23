@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="true" >
+
+    <PreferenceCategory android:title="Ustawienia połączenia" />
+
+    <EditTextPreference
+        android:defaultValue="176.31.202.50"
+        android:enabled="true"
+        android:key="serwerProxyIP"
+        android:summary="Wpisz adres serwera proxy"
+        android:title="Adres serwera proxy" />
+    <EditTextPreference
+        android:defaultValue="5000"
+        android:enabled="true"
+        android:key="serwerProxyPort"
+        android:summary="Wpisz port serwera proxy"
+        android:title="Port serwera proxy" />
+
+    <PreferenceCategory android:title="Ustawienia pylenia" />
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:enabled="true"
+        android:key="nameCity"
+        android:summary="Tu odczytasz nazwę miejscowości"
+        android:title="Miejscowość" />
+
+    <PreferenceScreen
+        android:persistent="true"
+        android:summary="Zaznacz na co jesteś uczulony"
+        android:title="Konfiguracja alergenów" >
+        <PreferenceCategory android:title="Wybierz trzy alergeny do monitorowania" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxAlternaria"
+            android:title="Alternaria" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxBabka"
+            android:title="Babka" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxBrzoza"
+            android:title="Brzoza" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxBylica"
+            android:title="Bylica" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxCladosporium"
+            android:title="Cladosporium" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxDab"
+            android:title="Dąb" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxKomosa"
+            android:title="Komosa" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxLeszczyna"
+            android:title="Leszczyna" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxOlsza"
+            android:title="Olsza" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxPokrzywa"
+            android:title="Pokrzywa" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxSzczaw"
+            android:title="Szczaw" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxTopola"
+            android:title="Topola" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxTrawy"
+            android:title="Trawy" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxWierzba"
+            android:title="Wierzba" />
+    </PreferenceScreen>
+
+    <PreferenceCategory android:title="Ustawienia widżetu" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="checkboxKolor"
+        android:persistent="true"
+        android:summary="Zaznacz, aby użyć ciemniejszego koloru"
+        android:title="Kolor czcionki" />
+
+</PreferenceScreen>

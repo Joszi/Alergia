@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvMiejsce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btnPobierzDane"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pobierzDane" />
+
+        <Button
+            android:id="@+id/btnPokazPylenie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pokazPylenie" />
+
+        <Button
+            android:id="@+id/btnPrzebiegLeczenia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/przebiegLeczenia" />
+
+        <Button
+            android:id="@+id/btnSynchronizuj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/synchronizujDane" />
+
+        <Button
+            android:id="@+id/btnUstawienia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ustawienia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/tbtnStanWifi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Wifi wyłączone"
+            android:textOn="Wifi włączone" />
+    </LinearLayout>
+
+</LinearLayout>
